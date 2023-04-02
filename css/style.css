@@ -609,6 +609,7 @@ img {
     color: var(--white-color);
     border-color: var(--white-color);
 }
+
 .button-subscribe {
     width: 165px;
     height: 40px;
@@ -942,6 +943,16 @@ img {
     display: flex;
     align-items: center;
     margin-bottom: 24px;
+}
+.policy_checkbox {
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--blue-color);
+    border-radius: 2px;
+
+    transition: background-color 250ms var(--action),
+        background-image 250ms var(--action),
+        border 250ms var(--action);
 }
 
 .modal-policy-text {
