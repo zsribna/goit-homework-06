@@ -938,36 +938,6 @@ img {
         letter-spacing: 0.04em;
         color: var(--blue-color);
 }
-
-.modal-policy-label {
-    display: flex;
-    align-items: center;
-    margin-bottom: 24px;
-}
-.policy_checkbox {
-    width: 16px;
-    height: 16px;
-    border: 1px solid var(--blue-color);
-    border-radius: 2px;
-
-    transition: background-color 250ms var(--action),
-        background-image 250ms var(--action),
-        border 250ms var(--action);
-}
-
-.modal-policy-text {
-    margin-left: 8px;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    color: var(--text-company-color);
-}
-
-.modal-policy-link {
-    color: var(--accent-color);
-    text-decoration: underline;
-}
-
 .modal-send-btn {
     display: block;
     width: 169px;
@@ -983,3 +953,84 @@ img {
 }
 
 
+
+
+.modal-form-check {
+    display: inline-block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+
+}
+
+.modal-form-check-desc {
+    display: block;
+    margin-left: 24px;
+}
+
+.modal-form-check-desc:after {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    margin-right: 8px;
+    border: 1.25px solid #2e2f42;
+    border-radius: 2px;
+    position: absolute;
+    left: 24px;
+}
+
+.modal-form-check:checked+.modal-form-check-desc:after {
+    background-color: #404bbf;
+    border: none;
+    background-image: url(../images/click.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.modal-form-check-desc {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+}
+
+.modal-form-submit {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    width: 169px;
+    height: 56px;
+    display: block;
+    margin: 0 auto;
+    color: var(--brand-main-btn);
+    background: var(--brand-main-btn-back);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    bottom: none;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-submit:hover,
+.modal-form-submit:focus {
+    background: var(--brand-main-btn-hover);
+}
+
+.policy-style {
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    color: #4D5AE5;
+}

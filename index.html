@@ -391,13 +391,12 @@
                     <textarea name="comment" class="modal-textarea" placeholder="Text input"></textarea>
                 </div>
             </div>
-            <label class="modal-policy-label">
-                <input type="checkbox" name="policy">
-                <span class="policy-checkbox"></span>
-                <span class="modal-policy-text">I accept the terms and conditions of the <a href="" class="modal-policy-link"
-                        target="_blank">Privacy Policy</a></span>
+            <input class="modal-form-check hidden-check" type="checkbox" name="user_policy" id="user_policy" />
+            
+            <label for="user_policy" class="modal-form-check-desc">
+                I accept the terms and conditions of the&nbsp;
+                <a href="" class="policy-style"> Privacy Policy</a>
             </label>
-                    
                     <button class="modal-send-btn fon_btn" type="submit">Send</button>
             </form>
         </div>
